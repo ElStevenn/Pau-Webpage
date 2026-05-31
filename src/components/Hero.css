@@ -311,15 +311,14 @@
 /* ─── Responsive ───────────────────────────────────────────── */
 @media (max-width: 768px) {
 
-  /* Stronger gradient on mobile: face shows top, text zone is dark */
+  /* Mobile scrim: keep face visible, only darken bottom text strip */
   .hero__scrim {
     background: linear-gradient(
       to bottom,
-      rgba(8, 8, 8, 0.15) 0%,
-      rgba(8, 8, 8, 0.10) 25%,
-      rgba(8, 8, 8, 0.55) 52%,
-      rgba(8, 8, 8, 0.90) 68%,
-      rgba(8, 8, 8, 0.96) 100%
+      transparent 0%,
+      transparent 45%,
+      rgba(8, 8, 8, 0.70) 68%,
+      rgba(8, 8, 8, 0.88) 100%
     );
   }
 
