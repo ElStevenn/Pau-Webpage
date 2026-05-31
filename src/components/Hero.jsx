@@ -8,7 +8,7 @@ import v3 from '../../videos hero/video_cringe.mp4'
 const VIDEO_PLAYLIST = [
   { src: v1, mobilePosition: '55% 38%' },
   { src: v2, mobilePosition: '35% 20%' },
-  { src: v3, mobilePosition: '40% 20%' },
+  { src: v3, mobilePosition: '55% 20%' },
 ]
 
 const CLIENTS = [
