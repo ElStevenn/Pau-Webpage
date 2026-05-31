@@ -6,7 +6,7 @@ import v2 from '../../videos hero/video_masculino.mp4'
 import v3 from '../../videos hero/video_cringe.mp4'
 
 const VIDEO_PLAYLIST = [
-  { src: v1, mobilePosition: '55% 38%' },
+  { src: v1, mobilePosition: '55% 48%' },
   { src: v2, mobilePosition: '35% 20%' },
   { src: v3, mobilePosition: '55% 20%' },
 ]
