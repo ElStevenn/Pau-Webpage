@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  cursor: auto;
+}
+
+body {
+  background: #080808;
+  overflow-x: hidden;
+}
+

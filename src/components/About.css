@@ -1,0 +1,133 @@
+.about {
+  padding: 120px 6vw;
+  background: var(--black);
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* ── Left column ─────────────────────────────────────────── */
+.about__label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--gray-mid);
+  text-transform: uppercase;
+  display: block;
+}
+
+.about__headline {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  color: var(--white);
+  margin-top: 16px;
+  line-height: 0.95;
+}
+
+.about__headline-accent {
+  color: var(--amber);
+}
+
+.about__body {
+  font-family: 'DM Mono', monospace;
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.8;
+  max-width: 480px;
+  margin-top: 32px;
+}
+
+.about__body p + p {
+  margin-top: 20px;
+}
+
+.about__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.about__pill {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--gray-mid);
+  border: 1px solid #2A2A2A;
+  padding: 8px 16px;
+}
+
+/* ── Right column ────────────────────────────────────────── */
+.about__visual {
+  background: #111111;
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about__visual-watermark {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 180px;
+  color: #1A1A1A;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+}
+
+.about__stats {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.about__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.about__stat-number {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--amber);
+  line-height: 1;
+}
+
+.about__stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    padding: 80px 24px;
+  }
+
+  .about__headline {
+    font-size: 40px;
+  }
+
+  .about__visual {
+    min-height: 300px;
+  }
+
+  .about__visual-watermark {
+    font-size: 120px;
+  }
+}

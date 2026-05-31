@@ -1,0 +1,91 @@
+.testimonials {
+  padding: 120px 6vw;
+  background: #0D0D0D;
+}
+
+.testimonials__label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--gray-mid);
+  text-transform: uppercase;
+  display: block;
+}
+
+.testimonials__headline {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  color: var(--white);
+  margin-top: 16px;
+  line-height: 1.05;
+}
+
+.testimonials__headline-accent {
+  color: var(--amber);
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.testimonials__card {
+  background: #111111;
+  padding: 40px;
+  border-top: 3px solid var(--amber);
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 600ms ease, transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.testimonials__card:nth-child(1) { transition-delay: 0ms;   }
+.testimonials__card:nth-child(2) { transition-delay: 200ms; }
+.testimonials__card:nth-child(3) { transition-delay: 400ms; }
+
+.testimonials__card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonials__quote {
+  font-family: 'DM Mono', monospace;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #CCCCCC;
+  font-style: italic;
+  display: block;
+}
+
+.testimonials__name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  display: block;
+  margin-top: 28px;
+}
+
+.testimonials__role {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--gray-mid);
+  display: block;
+  margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    padding: 80px 24px;
+  }
+
+  .testimonials__headline {
+    font-size: 40px;
+  }
+}

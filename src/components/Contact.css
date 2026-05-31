@@ -1,0 +1,92 @@
+.contact {
+  padding: 120px 6vw;
+  background: #0D0D0D;
+}
+
+.contact__label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--gray-mid);
+  text-transform: uppercase;
+  display: block;
+}
+
+.contact__headline {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--white);
+  margin-top: 16px;
+  line-height: 0.95;
+}
+
+.contact__headline-accent {
+  color: var(--amber);
+}
+
+.contact__subline {
+  font-family: 'DM Mono', monospace;
+  font-size: 15px;
+  color: #888888;
+  margin-top: 16px;
+}
+
+.contact__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 48px;
+  align-items: center;
+}
+
+.contact__cta-btn {
+  width: 100%;
+  height: 72px;
+  background: var(--amber);
+  color: var(--black);
+  border: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.contact__cta-btn:hover {
+  background: #FF8C2A;
+}
+
+.contact__details {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  color: var(--gray-mid);
+  line-height: 2.2;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__details a {
+  color: var(--gray-mid);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.contact__details a:hover {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 24px;
+  }
+
+  .contact__headline {
+    font-size: 44px;
+  }
+
+  .contact__body {
+    grid-template-columns: 1fr;
+  }
+}
